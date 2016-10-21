@@ -156,8 +156,15 @@ function selectRandomTerm() {
   return terms[randomIndex];
 };
 
+function chaChing () {
+  $('#cha-ching')[0].volume = 0.5;
+  $('#cha-ching')[0].load();
+  $('#cha-ching')[0].play();
+}
+
 function makeIpsum() {
   $("#cash").removeClass("inactive").addClass("active");
+  chaChing();
   $(".lorem").html('<p class="ipsum"></p>');
 
   for (i = 0; i < paragraphCount; i++) {

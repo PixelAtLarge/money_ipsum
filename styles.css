@@ -46,9 +46,13 @@ h1 {
   cursor: hand;
 }
 
+#cash {
+  transform: scale(0,0);
+}
+
 #cash.inactive {
-  animation: scaleIn 0.2s;
-	-webkit-animation: scaleIn 0.2s;
+  animation: scaleIn 0s;
+	-webkit-animation: scaleIn 0s;
   transform-origin: center bottom;
   transform: scale(0,0);
 }
