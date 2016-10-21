@@ -1,0 +1,95 @@
+body,
+html {
+  height: 100%
+}
+
+html {
+  background: #f1f2f3;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.container {
+  background: #fff;
+  border-top: 20px solid darkgreen;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-size: 5em;
+  margin: 0 0 .3em;
+}
+
+.description {
+  margin-bottom: 2em;
+}
+
+/* BUTTON STUFF */
+
+.test {
+  text-align: center;
+}
+
+#Layer_1 {
+  height: 300px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#cash.inactive {
+  animation: scaleIn 0.2s;
+	-webkit-animation: scaleIn 0.2s;
+  transform-origin: center bottom;
+  transform: scale(0,0);
+}
+
+#cash.active {
+	animation: scaleOut 1.1s;
+	-webkit-animation: scaleOut 1.1s;
+  transform-origin: center bottom;
+  transform: scale(1,1);
+}
+
+@keyframes scaleOut {
+	0%   { transform: scale(0, 0); }
+	100%   { transform: scale(1, 1); }
+}
+
+@-webkit-keyframes scaleOut {
+	0%   { -webkit-transform: scale(0, 0); }
+	100%  { -webkit-transform: scale(1, 1); }
+}
+
+@keyframes scaleIn {
+  0%   { transform: scale(1, 1); }
+	100%   { transform: scale(0, 0); }
+}
+
+@-webkit-keyframes scaleIn {
+  0%  { -webkit-transform: scale(1, 1); }
+	100%   { -webkit-transform: scale(0, 0); }
+}
+
+.lorem {
+  border-bottom: 1px solid #f1f2f3;
+}
+
+.ipsum {
+  line-height: 1.75;
+  padding-bottom: 1.15em;
+  text-align: left;
+}
+
+.ipsum:first-letter{
+  text-transform: capitalize;
+}
